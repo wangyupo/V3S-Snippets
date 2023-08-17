@@ -1,0 +1,149 @@
+{
+  "use v3s dialog": {
+    "prefix": "v3s-usedialog",
+    "body": [
+      "// <el-button @click=\"showDialog\">点击弹窗</el-button>",
+      "// <!-- 弹窗-用途 -->",
+      "// <Dialog v-model=\"dialogVisible\" title=\"自定义标题\" width=\"700px\" />",
+      "",
+      "import { ref } from \"vue\";",
+      "import Dialog from \"./dialog.vue\";",
+      "",
+      "/** 弹窗 START **/",
+      "const dialogVisible = ref(false); // 弹窗显示/隐藏",
+      "",
+      "// 显示弹窗",
+      "const showDialog = () => {",
+      "  dialogVisible.value = true;",
+      "};",
+      "/** 弹窗 END **/",
+      ""
+    ],
+    "description": "use v3s dialog"
+  },
+  "use v3s el-form": {
+    "prefix": "v3s-useelform",
+    "body": [
+      "// <el-form ref=\"ruleFormRef\" :model=\"ruleForm\" :rules=\"rules\" label-width=\"auto\" status-icon>",
+      "//   <el-form-item label=\"名称\" prop=\"name\">",
+      "//     <el-input v-model=\"ruleForm.name\" placeholder=\"请输入\" />",
+      "//   </el-form-item>",
+      "// </el-form>",
+      "// ",
+      "// <div class=\"flex items-center justify-end mt-6\">",
+      "//   <el-button type=\"primary\" @click=\"submitForm(ruleFormRef)\">确认</el-button>",
+      "//   <el-button @click=\"resetForm(ruleFormRef)\">重置</el-button>",
+      "//   <el-button @click=\"closed\">取消</el-button>",
+      "// </div>",
+      "",
+      "import { reactive, ref, watch } from \"vue\";",
+      "",
+      "/** el-form START **/",
+      "const ruleFormRef = ref();",
+      "const ruleForm = reactive({",
+      "  name: \"\",",
+      "});",
+      "const rules = reactive({",
+      "  name: [{ required: true, message: \"请输入名称\", trigger: \"blur\" }],",
+      "});",
+      "",
+      "// 提交表单",
+      "const submitForm = async formEl => {",
+      "  if (!formEl) return;",
+      "  await formEl.validate((valid, fields) => {",
+      "    if (valid) {",
+      "      // do something",
+      "    }",
+      "  });",
+      "};",
+      "",
+      "// resetForm(ruleFormRef.value);",
+      "// 重置表单",
+      "const resetForm = formEl => {",
+      "  if (!formEl) return;",
+      "  formEl.resetFields();",
+      "};",
+      "/** el-form END **/",
+      ""
+    ],
+    "description": "use v3s dialog"
+  },
+  "use element-plus message-box": {
+    "prefix": "v3s-usemessagebox",
+    "body": [
+      "// <el-button text @click=\"open\">Click to open the Message Box</el-button>",
+      "import { ElMessage, ElMessageBox } from \"element-plus\";",
+      "",
+      "const open = () => {",
+      "  ElMessageBox.confirm(`弹框内容?`, \"弹框标题\", {",
+      "    confirmButtonText: \"确认\",",
+      "    cancelButtonText: \"取消\",",
+      "    type: \"warning\",",
+      "  }).then(() => {",
+      "    ElMessage({",
+      "      type: \"success\",",
+      "      message: \"提示语\",",
+      "    });",
+      "  });",
+      "};",
+      ""
+    ]
+  },
+  "code 200": {
+    "prefix": ["v3s-code200"],
+    "body": ["if (res.code === 200) {}"]
+  },
+  "params object": {
+    "prefix": ["v3s-params"],
+    "body": ["const params = {}"]
+  },
+  "api": {
+    "prefix": ["v3s-api"],
+    "body": ["const params = {}", "api(params).then(res => {", "  if (res.code == 200) {", "  }", "});"]
+  },
+  "use pinia in vue3": {
+    "prefix": ["v3s-usestore"],
+    "body": [
+      "import { useDemoStore } from \"@/stores/demo.js\";",
+      "import { storeToRefs } from \"pinia\";",
+      "",
+      "const demoStore = useDemoStore();",
+      "const { variable } = storeToRefs(demoStore);",
+      "",
+      "// demoStore.\\$patch(state => {",
+      "//  state.variable = false;",
+      "// });",
+      ""
+    ]
+  },
+  "create pinia store": {
+    "prefix": ["v3s-pinia"],
+    "body": [
+      "import { defineStore } from \"pinia\";",
+      "",
+      "export const useDemoStore = defineStore(\"demo\", {",
+      "  state: () => ({",
+      "    counter: 10,",
+      "  }),",
+      "  getters: {",
+      "    doubleCount: state => state.counter * 2,",
+      "  },",
+      "  actions: {",
+      "    increment(data) {",
+      "      this.counter = data;",
+      "    },",
+      "  },",
+      "  persist: true, // localstorage yes or no",
+      "});",
+      ""
+    ]
+  },
+  "vue3 loading": {
+    "prefix": ["v3s-loading"],
+    "body": ["const loading = ref(false);", "// loading.value = true;", "// loading.value = false;"]
+  },
+  "const fn": {
+    "prefix": ["v3s-cfn"],
+    "body": ["// 用途", "const fn = () => {};"]
+  }
+}

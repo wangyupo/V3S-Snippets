@@ -1,0 +1,28 @@
+{
+  "name": "vscode-plugin-v3s-snippets",
+  "displayName": "vscode-plugin-v3s-snippets",
+  "description": "代码片段插件",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/js.code-snippets"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue.code-snippets"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/vueHtml.code-snippets"
+      }
+    ]
+  }
+}
