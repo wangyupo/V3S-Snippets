@@ -1,0 +1,26 @@
+{
+  "slot": {
+    "prefix": "v3s-slot",
+    "body": ["<slot></slot>"]
+  },
+  "scope row": {
+    "prefix": ["v3s-scr"],
+    "body": ["scope.row"]
+  },
+  "element-plus v-loading": {
+    "prefix": ["v3s-loading"],
+    "body": ["v-loading=\"loading\""]
+  },
+  "element-plus el-button": {
+    "prefix": "v3s-btn",
+    "body": ["<el-button type=\"primary\">Primary</el-button>"]
+  },
+  "element-plus el-button link": {
+    "prefix": "v3s-btnlink",
+    "body": ["<el-button type=\"primary\" link>Primary</el-button>"]
+  },
+  "element-plus el-input": {
+    "prefix": "v3s-input",
+    "body": ["<el-input v-model=\"input\" placeholder=\"Please input\" />", "const input = ref('')"]
+  }
+}
