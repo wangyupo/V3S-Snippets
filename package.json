@@ -3,6 +3,7 @@
   "displayName": "vscode-plugin-v3s-snippets",
   "description": "代码片段插件",
   "version": "0.0.1",
+  "publisher": "youper",
   "engines": {
     "vscode": "^1.81.0"
   },
