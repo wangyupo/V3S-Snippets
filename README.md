@@ -43,3 +43,7 @@ This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s)
 [v3s](https://github.com/wangyupo/v3s) code snippets.
 
 ---
+
+## License
+
+[MIT © Richard McRichface.](https://github.com/wangyupo/V3S-Snippets/blob/main/LICENSE)
