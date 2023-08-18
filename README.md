@@ -17,6 +17,7 @@ This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s)
 | Snippet              | Purpose                       |
 | -------------------- | ----------------------------- |
 | `v3s-table-template` | v3s table custom column       |
+| `v3s-wrapper`        | v3s section wrapper           |
 | `v3s-scr`            | scope.row directive           |
 | `v3s-loading`        | v-loading="loading" directive |
 
