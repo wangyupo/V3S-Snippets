@@ -6,6 +6,11 @@
   "author": "youper",
   "version": "0.0.2",
   "publisher": "youper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangyupo/V3S-Snippets"
+  },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.81.0"
   },
