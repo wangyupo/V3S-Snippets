@@ -33,7 +33,7 @@ This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s)
 | `v3s-api`           | create api logic code                               |
 | `v3s-params`        | create code `const params = {}`                     |
 | `v3s-code200`       | create code`if (res.code === 200) {}`               |
-| `v3s-usestore`      | import a pinia store and use it                     |
+| `v3s-usepinia`      | import a pinia store and use it                     |
 | `v3s-pinia`         | create an empty pinia template                      |
 
 ## Release Notes
