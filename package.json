@@ -2,7 +2,7 @@
   "icon": "assets/v3s.jpg",
   "name": "v3s-snippets",
   "displayName": "V3S Snippets",
-  "description": "V3S code snippets for VsCode",
+  "description": "V3S code snippets for VSCode",
   "author": "youper",
   "version": "0.0.2",
   "publisher": "youper",
