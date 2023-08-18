@@ -102,7 +102,7 @@
     "body": ["const params = {}", "api(params).then(res => {", "  if (res.code == 200) {", "  }", "});"]
   },
   "use pinia in vue3": {
-    "prefix": ["v3s-usestore"],
+    "prefix": ["v3s-usepinia"],
     "body": [
       "import { useDemoStore } from \"@/stores/demo.js\";",
       "import { storeToRefs } from \"pinia\";",
