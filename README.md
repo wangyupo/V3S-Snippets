@@ -1,4 +1,4 @@
-# V3S Faster
+# V3S Snippets
 
 This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s).
 
@@ -6,17 +6,19 @@ This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s)
 
 ### Vue
 
-| Snippet      | Purpose                                   |
-| ------------ | ----------------------------------------- |
-| `v3s-table`  | Single file component base with el-table  |
-| `v3s-dialog` | Single file component base with el-dialog |
+| Snippet               | Purpose                                                  |
+| --------------------- | -------------------------------------------------------- |
+| `v3s-table`           | Single file component base with v3s table                |
+| `v3s-table-selection` | Single file component base with v3s table with selection |
+| `v3s-dialog`          | Single file component base with v3s dialog               |
 
 ### Template
 
-| Snippet       | Purpose                       |
-| ------------- | ----------------------------- |
-| `v3s-scr`     | scope.row directive           |
-| `v3s-loading` | v-loading="loading" directive |
+| Snippet              | Purpose                       |
+| -------------------- | ----------------------------- |
+| `v3s-table-template` | v3s table custom column       |
+| `v3s-scr`            | scope.row directive           |
+| `v3s-loading`        | v-loading="loading" directive |
 
 ### Script
 
