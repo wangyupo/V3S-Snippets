@@ -1,4 +1,13 @@
 {
+  "table template": {
+    "prefix": "v3s-table-template",
+    "body": [
+      "<template #$1=\"{ scope }\">",
+      "  {{ scope.row.$1 }}",
+      "</template>",
+    ],
+    "description": "v3s table custom column"
+  },
   "slot": {
     "prefix": "v3s-slot",
     "body": ["<slot></slot>"]
