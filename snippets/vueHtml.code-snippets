@@ -8,6 +8,15 @@
     ],
     "description": "v3s table custom column"
   },
+  "v3s wrapper": {
+    "prefix": "v3s-wrapper",
+    "body": [
+      "<RhWrapper title=\"$1\">",
+      "  $2",
+      "</RhWrapper>",
+    ],
+    "description": "v3s section wrapper"
+  },
   "slot": {
     "prefix": "v3s-slot",
     "body": ["<slot></slot>"]
