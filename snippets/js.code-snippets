@@ -145,5 +145,18 @@
   "const fn": {
     "prefix": ["v3s-cfn"],
     "body": ["// 用途", "const fn = () => {};"]
-  }
+  },
+  "vue3 router": {
+    "prefix": ["v3s-router"],
+    "body": [
+      "import { useRouter } from \"vue-router\";",
+      "",
+      "const router = useRouter();",
+      "",
+      "router.push({",
+      "  path: \"/\",",
+      "};",
+    ],
+    "description": "import useRouter and create router"
+  },
 }
