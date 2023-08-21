@@ -167,5 +167,10 @@
       "};"
     ],
     "description": "import useRouter and create router"
+  },
+  "import api func": {
+    "prefix": ["v3s-imdapi"],
+    "body": ["import { $2 } from \"@/api/$1.js\";"],
+    "description": "import api func"
   }
 }
