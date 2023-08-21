@@ -7,6 +7,7 @@
       "  <div>",
       "    $TM_FILENAME_BASE",
       "  </div>",
+      "</template>",
       "",
       "<script setup>",
       "",
