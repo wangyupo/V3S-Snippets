@@ -38,9 +38,7 @@ This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s)
 
 ## Release Notes
 
-### 0.0.1
-
-[v3s](https://github.com/wangyupo/v3s) code snippets.
+See [Change Log](https://github.com/wangyupo/V3S-Snippets/blob/main/CHANGELOG.md).
 
 ---
 
