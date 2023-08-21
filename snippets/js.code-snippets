@@ -91,7 +91,7 @@
   },
   "code 200": {
     "prefix": ["v3s-code200"],
-    "body": ["if (res.code === 200) {}"]
+    "body": ["if (res.code == 200) {}"]
   },
   "params object": {
     "prefix": ["v3s-params"],
@@ -99,7 +99,16 @@
   },
   "api": {
     "prefix": ["v3s-api"],
-    "body": ["const params = {}", "api(params).then(res => {", "  if (res.code == 200) {", "  }", "});"]
+    "body": [
+      "const params = {}",
+      "api(params)",
+      "  .then(res => {",
+      "    if (res.code == 200) {",
+      "      $1",
+      "    }",
+      "  })",
+      "  .finally(() => {});"
+    ]
   },
   "use pinia in vue3": {
     "prefix": ["v3s-usepinia"],
@@ -155,8 +164,8 @@
       "",
       "router.push({",
       "  path: \"/\",",
-      "};",
+      "};"
     ],
     "description": "import useRouter and create router"
-  },
+  }
 }
