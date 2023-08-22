@@ -8,13 +8,9 @@ _2023-08-22_
 
 #### Features
 
-- Snippets `v3s-imdapi`: Create code `import {} from "@/api/xx.js"`.
+- Snippets `v3s-base`: Single file component base with v3s.
 - Snippets `v3s-imdutils`: Create code `import {} from "@/utils/xx.js";`.
-
-#### Update
-
-- Snippets `v3s-api`: Format code.
-- Code format: Global replace `===` -> `==`.
+- Snippets `v3s-imdutils`: Create code `import {} from "@/utils/xx.js";`.
 
 ### 0.0.3
 
