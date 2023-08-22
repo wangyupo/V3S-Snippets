@@ -2,6 +2,20 @@
 
 All notable changes to the "V3S Snippets" extension will be documented in this file.
 
+### 0.0.7
+
+_2023-08-22_
+
+#### Features
+
+- Snippets `v3s-imdapi`: Create code `import {} from "@/api/xx.js"`.
+- Snippets `v3s-imdutils`: Create code `import {} from "@/utils/xx.js";`.
+
+#### Update
+
+- Snippets `v3s-api`: Format code.
+- Code format: Global replace `===` -> `==`.
+
 ### 0.0.3
 
 _2023-08-21_
