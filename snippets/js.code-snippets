@@ -164,13 +164,18 @@
       "",
       "router.push({",
       "  path: \"/\",",
-      "};"
+      "});"
     ],
     "description": "import useRouter and create router"
   },
   "import api func": {
     "prefix": ["v3s-imdapi"],
-    "body": ["import { $2 } from \"@/api/$1.js\";"],
+    "body": ["import { $2 } from \"@/api/${1:api}.js\";"],
     "description": "import api func"
+  },
+  "import utils common": {
+    "prefix": ["v3s-imdutils"],
+    "body": ["import { $2 } from \"@/utils/${1:common}.js\";"],
+    "description": "import utils"
   }
 }
