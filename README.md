@@ -8,6 +8,7 @@ This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s)
 
 | Snippet               | Purpose                                                  |
 | --------------------- | -------------------------------------------------------- |
+| `v3s-base`            | Single file component base with v3s                      |
 | `v3s-table`           | Single file component base with v3s table                |
 | `v3s-table-selection` | Single file component base with v3s table with selection |
 | `v3s-dialog`          | Single file component base with v3s dialog               |
