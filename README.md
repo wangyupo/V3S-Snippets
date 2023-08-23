@@ -29,10 +29,11 @@ This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s)
 | `v3s-usedialog`     | import dialog and create logic code                 |
 | `v3s-useelform`     | create el-form logic code                           |
 | `v3s-usemessagebox` | import ElMessage, ElMessageBox and create use demo  |
+| `v3s-elmsg`         | create ElMessage template code                      |
 | `v3s-imdapi`        | create code `import {} from "@/api/xx.js"    `      |
 | `v3s-imdutils`      | create code `import {} from "@/utils/xx.js";`       |
 | `v3s-loading`       | create loading related code                         |
-| `v3s-cfn`           | Create an arrow function with functional annotation |
+| `v3s-cfn`           | create an arrow function with functional annotation |
 | `v3s-router`        | import useRouter and create router logic code       |
 | `v3s-api`           | create api logic code                               |
 | `v3s-params`        | create code `const params = {}`                     |
