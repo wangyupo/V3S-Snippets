@@ -2,6 +2,18 @@
 
 All notable changes to the "V3S Snippets" extension will be documented in this file.
 
+### 0.0.8
+
+_2023-08-23_
+
+#### Features
+
+- Snippets `v3s-elmsg`: Create el-message code where you want.
+
+#### Update
+
+- Snippets `v3s-base`,`v3s-table`,`v3s-table-selectio`,`v3s-dialog`: Default selected explanatory note which can help you describe featrue of this page.
+
 ### 0.0.7
 
 _2023-08-22_
