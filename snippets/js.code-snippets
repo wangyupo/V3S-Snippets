@@ -153,7 +153,7 @@
   },
   "const fn": {
     "prefix": ["v3s-cfn"],
-    "body": ["// 用途", "const fn = () => {};"]
+    "body": ["// ${1:用途}", "const ${2:fn} = () => {$3};"]
   },
   "vue3 router": {
     "prefix": ["v3s-router"],

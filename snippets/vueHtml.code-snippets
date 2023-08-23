@@ -11,7 +11,7 @@
   "v3s wrapper": {
     "prefix": "v3s-wrapper",
     "body": [
-      "<RhWrapper title=\"$1\">",
+      "<RhWrapper title=\"${1:示例标题}\">",
       "  $2",
       "</RhWrapper>",
     ],
@@ -31,11 +31,11 @@
   },
   "element-plus el-button": {
     "prefix": "v3s-btn",
-    "body": ["<el-button type=\"primary\">Primary</el-button>"]
+    "body": ["<el-button type=\"primary\">${1:Primary}</el-button>"]
   },
   "element-plus el-button link": {
     "prefix": "v3s-btnlink",
-    "body": ["<el-button type=\"primary\" link>Primary</el-button>"]
+    "body": ["<el-button type=\"primary\" link>${1:Primary}</el-button>"]
   },
   "element-plus el-input": {
     "prefix": "v3s-input",
