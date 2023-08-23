@@ -177,5 +177,15 @@
     "prefix": ["v3s-imdutils"],
     "body": ["import { $2 } from \"@/utils/${1:common}.js\";"],
     "description": "import utils"
+  },
+  "create el-message": {
+    "prefix": ["v3s-elmsg"],
+    "body": [
+      "ElMessage({",
+      "  message: \"${1:提示信息}\",",
+      "  type: \"success\",",
+      "})",
+    ],
+    "description": "create el-message code"
   }
 }
