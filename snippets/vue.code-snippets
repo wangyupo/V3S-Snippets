@@ -3,9 +3,9 @@
     "prefix": "v3s-base",
     "body": [
       "<template>",
-      "  <!-- $TM_FILENAME_BASE -->",
+      "  <!-- ${1:TM_FILENAME_BASE} -->",
       "  <div>",
-      "    $TM_FILENAME_BASE",
+      "    ${2:TM_FILENAME_BASE}",
       "  </div>",
       "</template>",
       "",
@@ -22,7 +22,7 @@
     "prefix": "v3s-table",
     "body": [
       "<template>",
-      "  <!-- $TM_FILENAME_BASE -->",
+      "  <!-- ${1:TM_FILENAME_BASE} -->",
       "  <div>",
       "    <RhSearch :searchInfo=\"searchInfo\" :searchForm=\"searchForm\" @search=\"handleSearch\" />",
       "    <RhTable border stripe :loading=\"loading\" :table-data=\"tableData\" @pageChange=\"fn_getList\" @pageSizeChange=\"pageSizeChange\">",
@@ -154,7 +154,7 @@
     "prefix": "v3s-table-selection",
     "body": [
       "<template>",
-      "  <!-- $TM_FILENAME_BASE -->",
+      "  <!-- ${1:TM_FILENAME_BASE} -->",
       "  <div>",
       "    <RhSearch :searchInfo=\"searchInfo\" :searchForm=\"searchForm\" @search=\"handleSearch\" />",
       "    <RhTable",
@@ -309,7 +309,7 @@
     "prefix": "v3s-dialog",
     "body": [
       "<template>",
-      "  <!-- 弹窗-业务功能 -->",
+      "  <!-- 弹窗-${1:业务/功能描述} -->",
       "  <el-dialog v-model=\"dialogVisible\" v-bind=\"\\$attrs\" @opened=\"opened\" @closed=\"closed\">",
       "    示例弹窗",
       "    <template #footer>",
