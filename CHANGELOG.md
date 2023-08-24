@@ -2,6 +2,14 @@
 
 All notable changes to the "V3S Snippets" extension will be documented in this file.
 
+### 0.0.10
+
+_2023-08-24
+
+#### Features
+
+- Snippets `v3s-defineProps`: Create defineProps code with options.
+
 ### 0.0.8
 
 _2023-08-23_
