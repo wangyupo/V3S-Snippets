@@ -180,12 +180,19 @@
   },
   "create el-message": {
     "prefix": ["v3s-elmsg"],
-    "body": [
-      "ElMessage({",
-      "  message: \"${1:提示信息}\",",
-      "  type: \"${2|success,warning,error,message|}\",",
-      "})",
-    ],
+    "body": ["ElMessage({", "  message: \"${1:提示信息}\",", "  type: \"${2|success,warning,error,message|}\",", "})"],
     "description": "create el-message code"
+  },
+  "create props": {
+    "prefix": ["v3s-defineProps"],
+    "body": [
+      "const props = defineProps({",
+      "  ${1:width}: {",
+      "    type: ${2|String,Number,[Number\\, String],Object,Array,Function,Boolean|},",
+      "    default: \"${3:100%}\"",
+      "  },",
+      "});"
+    ],
+    "description": "create defineProps code"
   }
 }
