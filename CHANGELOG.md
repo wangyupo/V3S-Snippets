@@ -2,6 +2,14 @@
 
 All notable changes to the "V3S Snippets" extension will be documented in this file.
 
+### 0.0.11
+
+_2023-08-26
+
+#### Update
+
+- Snippets `v3s-usepinia`: Update default selected and capitalize first word in instance.
+
 ### 0.0.10
 
 _2023-08-24
