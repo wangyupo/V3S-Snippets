@@ -130,7 +130,7 @@
     "body": [
       "import { defineStore } from \"pinia\";",
       "",
-      "export const useDemoStore = defineStore(\"demo\", {",
+      "export const use${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}Store = defineStore(\"${TM_FILENAME_BASE}\", {",
       "  state: () => ({",
       "    counter: 10,",
       "  }),",
