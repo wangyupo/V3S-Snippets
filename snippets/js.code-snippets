@@ -113,14 +113,14 @@
   "use pinia in vue3": {
     "prefix": ["v3s-usepinia"],
     "body": [
-      "import { useDemoStore } from \"@/stores/demo.js\";",
+      "import { use${1/(.*)/${1:/capitalize}/}Store } from \"@/stores/${1:demo}.js\";",
       "import { storeToRefs } from \"pinia\";",
       "",
-      "const demoStore = useDemoStore();",
-      "const { variable } = storeToRefs(demoStore);",
+      "const ${1:demo}Store = use${1/(.*)/${1:/capitalize}/}Store();",
+      "const { ${2:variable} } = storeToRefs(${1:demo}Store);",
       "",
-      "// demoStore.\\$patch(state => {",
-      "//  state.variable = false;",
+      "// ${1:demo}Store.\\$patch(state => {",
+      "//  state.${2:variable} = ${3:false};",
       "// });",
       ""
     ]
