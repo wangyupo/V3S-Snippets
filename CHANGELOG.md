@@ -2,9 +2,34 @@
 
 All notable changes to the "V3S Snippets" extension will be documented in this file.
 
+### 0.0.13
+
+_2023-08-28_
+
+#### Features
+
+- Snippets `v3s-imdhooks`: Create code `import { useXx } from "@/hooks/useXx.js";`.
+- Snippets `v3s-reactive`: Create code `const param = reactive({});`.
+- Snippets `v3s-computed`: Create code `const param = computed(() => { return });`.
+- Snippets `v3s-watch`: Create code `watch(() => param, (newVal, oldVal) => {});`.
+- Snippets `v3s-watch-array`: Create code watch two more params.
+- Snippets `v3s-watcheffect`: Create code `watchEffect(() => {});`.
+- Snippets `v3s-ref`: Create code `const param = ref();`.
+- Snippets `v3s-onmounted`: Create code `onMounted(() => {});`.
+- Snippets `v3s-onbeforemount`: Create code `onBeforeMount(() => {});`.
+- Snippets `v3s-onbeforeupdate`: Create code `onBeforeUpdate(() => {});`.
+- Snippets `v3s-onupdated`: Create code `onUpdated(() => {});`.
+- Snippets `v3s-onerrorcaptured`: Create code `onErrorCaptured(() => {});`.
+- Snippets `v3s-onunmounted`: Create code `onUnmounted(() => {});`.
+- Snippets `v3s-onbeforeunmount`: Create code `onBeforeUnmount(() => {});`.
+
+#### Update
+
+- Snippets `v3s-base`: Tab after `<template></template>` to `script`.
+
 ### 0.0.11
 
-_2023-08-26
+_2023-08-26_
 
 #### Update
 
@@ -12,7 +37,7 @@ _2023-08-26
 
 ### 0.0.10
 
-_2023-08-24
+_2023-08-24_
 
 #### Features
 
