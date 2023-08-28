@@ -10,7 +10,7 @@
       "</template>",
       "",
       "<script setup>",
-      "",
+      "$3",
       "</script>",
       "",
       "<style lang=\"scss\" scoped></style>",
