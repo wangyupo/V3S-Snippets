@@ -24,23 +24,36 @@ This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s)
 
 ### Script
 
-| Snippet             | Purpose                                             |
-| ------------------- | --------------------------------------------------- |
-| `v3s-usedialog`     | import dialog and create logic code                 |
-| `v3s-useelform`     | create el-form logic code                           |
-| `v3s-usemessagebox` | import ElMessage, ElMessageBox and create use demo  |
-| `v3s-elmsg`         | create ElMessage template code                      |
-| `v3s-imdapi`        | create code `import {} from "@/api/xx.js"`          |
-| `v3s-imdutils`      | create code `import {} from "@/utils/xx.js";`       |
-| `v3s-loading`       | create loading related code                         |
-| `v3s-cfn`           | create an arrow function with functional annotation |
-| `v3s-defineProps`   | create defineProps code                             |
-| `v3s-router`        | import useRouter and create router logic code       |
-| `v3s-api`           | create api logic code                               |
-| `v3s-params`        | create code `const params = {}`                     |
-| `v3s-code200`       | create code`if (res.code === 200) {}`               |
-| `v3s-usepinia`      | import a pinia store and use it                     |
-| `v3s-pinia`         | create an empty pinia template                      |
+| Snippet               | Purpose                                                   |
+| --------------------- | --------------------------------------------------------- |
+| `v3s-usedialog`       | import dialog and create logic code                       |
+| `v3s-useelform`       | create el-form logic code                                 |
+| `v3s-usemessagebox`   | import ElMessage, ElMessageBox and create use demo        |
+| `v3s-elmsg`           | create ElMessage template code                            |
+| `v3s-imdapi`          | create code `import {} from "@/api/xx.js"`                |
+| `v3s-imdutils`        | create code `import {} from "@/utils/xx.js";`             |
+| `v3s-imdhooks`        | create code `import {} from "@/hooks/xx.js";`             |
+| `v3s-loading`         | create loading related code                               |
+| `v3s-cfn`             | create an arrow function with functional annotation       |
+| `v3s-defineProps`     | create defineProps code                                   |
+| `v3s-router`          | import useRouter and create router logic code             |
+| `v3s-api`             | create api logic code                                     |
+| `v3s-params`          | create code `const params = {}`                           |
+| `v3s-code200`         | create code`if (res.code === 200) {}`                     |
+| `v3s-usepinia`        | import a pinia store and use it                           |
+| `v3s-reactive`        | create code `const param = reactive({});`                 |
+| `v3s-computed`        | create code `const param = computed(() => { return });`   |
+| `v3s-watch`           | create code `watch(() => param, (newVal, oldVal) => {});` |
+| `v3s-watch-array`     | create code watch two more params                         |
+| `v3s-watcheffect`     | create code `watchEffect(() => {});`                      |
+| `v3s-ref`             | create code `const param = ref();`                        |
+| `v3s-onmounted`       | create code `onMounted(() => {});`                        |
+| `v3s-onbeforemount`   | create code `onBeforeMount(() => {});`                    |
+| `v3s-onbeforeupdate`  | create code `onBeforeUpdate(() => {});`                   |
+| `v3s-onupdated`       | create code `onUpdated(() => {});`                        |
+| `v3s-onerrorcaptured` | create code `onErrorCaptured(() => {});`                  |
+| `v3s-onunmounted`     | create code `onUnmounted(() => {});`                      |
+| `v3s-onbeforeunmount` | create code `onBeforeUnmount(() => {});`                  |
 
 ## Release Notes
 
