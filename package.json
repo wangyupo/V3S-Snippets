@@ -21,15 +21,19 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/js.code-snippets"
+        "path": "./snippets/vue-script.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-script-v3s.json"
       },
       {
         "language": "vue",
-        "path": "./snippets/vue.code-snippets"
+        "path": "./snippets/vue.json"
       },
       {
         "language": "vue-html",
-        "path": "./snippets/vueHtml.code-snippets"
+        "path": "./snippets/vue-template.json"
       }
     ]
   }
