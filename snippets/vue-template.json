@@ -1,20 +1,12 @@
 {
   "table template": {
     "prefix": "v3s-table-template",
-    "body": [
-      "<template #$1=\"{ scope }\">",
-      "  {{ scope.row.$1 }}",
-      "</template>",
-    ],
+    "body": ["<template #$1=\"{ scope }\">", "\t{{ scope.row.$1 }}", "</template>"],
     "description": "v3s table custom column"
   },
   "v3s wrapper": {
     "prefix": "v3s-wrapper",
-    "body": [
-      "<RhWrapper title=\"${1:示例标题}\">",
-      "  $2",
-      "</RhWrapper>",
-    ],
+    "body": ["<RhWrapper title=\"${1:示例标题}\">", "\t$2", "</RhWrapper>"],
     "description": "v3s section wrapper"
   },
   "slot": {
