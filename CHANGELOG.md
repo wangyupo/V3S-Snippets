@@ -97,8 +97,4 @@ _2023-08-17_
 
 #### Features
 
-- Init: [V3S-Snippets](https://github.com/wangyupo/V3S-Snippets).
-
-## [Unreleased]
-
-- Initial release
+- Initial release: [V3S-Snippets](https://github.com/wangyupo/V3S-Snippets).
