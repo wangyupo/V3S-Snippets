@@ -34,6 +34,10 @@
       {
         "language": "vue-html",
         "path": "./snippets/vue-template.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/vue-template-elementPlus.json"
       }
     ]
   }
