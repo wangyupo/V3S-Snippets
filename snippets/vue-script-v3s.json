@@ -199,5 +199,10 @@
       "});"
     ],
     "description": "create defineProps code"
+  },
+  "arrow function": {
+    "prefix": ["v3s-anfn"],
+    "body": ["(${1:param}) => {", "\t$2", "}"],
+    "description": "create arrow function"
   }
 }
