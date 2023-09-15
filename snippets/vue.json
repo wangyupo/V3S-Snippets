@@ -3,9 +3,9 @@
     "prefix": "v3s-base",
     "body": [
       "<template>",
-      "  <!-- ${1:TM_FILENAME_BASE} -->",
+      "  <!-- ${1:业务说明} -->",
       "  <div>",
-      "    ${2:TM_FILENAME_BASE}",
+      "    $2",
       "  </div>",
       "</template>",
       "",
@@ -22,7 +22,7 @@
     "prefix": "v3s-table",
     "body": [
       "<template>",
-      "  <!-- ${1:TM_FILENAME_BASE} -->",
+      "  <!-- ${1:业务说明} -->",
       "  <div>",
       "    <RhSearch :searchInfo=\"searchInfo\" :searchForm=\"searchForm\" @search=\"handleSearch\" />",
       "    <RhTable border stripe :loading=\"loading\" :table-data=\"tableData\" @pageChange=\"fn_getList\" @pageSizeChange=\"pageSizeChange\">",
@@ -154,7 +154,7 @@
     "prefix": "v3s-table-selection",
     "body": [
       "<template>",
-      "  <!-- ${1:TM_FILENAME_BASE} -->",
+      "  <!-- ${1:业务说明} -->",
       "  <div>",
       "    <RhSearch :searchInfo=\"searchInfo\" :searchForm=\"searchForm\" @search=\"handleSearch\" />",
       "    <RhTable",
