@@ -20,5 +20,9 @@
   "element-plus v-loading": {
     "prefix": ["v3s-loading"],
     "body": ["v-loading=\"loading\""]
+  },
+  "assets": {
+    "prefix": ["v3s-assets"],
+    "body": ["@/assets/$1"]
   }
 }
