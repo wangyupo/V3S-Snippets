@@ -175,12 +175,15 @@
   },
   "import utils common": {
     "prefix": ["v3s-imdutils"],
-    "body": ["import { $2 } from \"@/utils/${1:common}.js\";"],
+    "body": ["import { $2 } from \"@/utils/${1:index}.js\";"],
     "description": "import utils"
   },
   "import hooks": {
     "prefix": ["v3s-imdhooks"],
-    "body": ["import { use${1/(.*)/${1:/capitalize}/} } from \"@/hooks/use${1/(.*)/${1:/capitalize}/}.js\";"],
+    "body": [
+      "import { use${1/(.*)/${1:/capitalize}/} } from \"@/hooks/use${1/(.*)/${1:/capitalize}/}.js\";",
+      "const { $2 } = use${1/(.*)/${1:/capitalize}/}();"
+    ],
     "description": "import hooks"
   },
   "create el-message": {
