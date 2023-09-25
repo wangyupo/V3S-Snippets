@@ -63,5 +63,10 @@
     "prefix": "v3s-onbeforeunmount",
     "body": ["onBeforeUnmount(() => {${1}});"],
     "description": "(beforeDestroy) Vue onBeforeUnmount Lifecycle hook"
+  },
+  "Vue3 nextTick func": {
+    "prefix": "v3s-nextTick",
+    "body": ["nextTick(() => {${1}});"],
+    "description": "Vue3 nextTick func"
   }
 }
