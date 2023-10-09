@@ -168,6 +168,15 @@
     ],
     "description": "import useRouter and create router"
   },
+  "vue3 route": {
+    "prefix": ["v3s-route"],
+    "body": [
+      "import { useRoute } from \"vue-router\";",
+      "",
+      "const route = useRoute();"
+    ],
+    "description": "import useRoute and create route"
+  },
   "import api func": {
     "prefix": ["v3s-imdapi"],
     "body": ["import { $2 } from \"@/api/${1:api}.js\";"],
