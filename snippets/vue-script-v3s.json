@@ -101,10 +101,10 @@
     "prefix": ["v3s-api"],
     "body": [
       "const params = {}",
-      "api(params)",
+      "${1:api}(params)",
       "  .then(res => {",
       "    if (res.code == 200) {",
-      "      $1",
+      "      $2",
       "    }",
       "  })",
       "  .finally(() => {});"
