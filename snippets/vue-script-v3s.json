@@ -153,7 +153,7 @@
   },
   "const fn": {
     "prefix": ["v3s-cfn"],
-    "body": ["// ${1:用途}", "const ${2:fn} = () => {$3};"]
+    "body": ["// ${1:用途}", "const ${2:fn} = ($3) => {$4};"]
   },
   "vue3 router": {
     "prefix": ["v3s-router"],
@@ -170,11 +170,7 @@
   },
   "vue3 route": {
     "prefix": ["v3s-route"],
-    "body": [
-      "import { useRoute } from \"vue-router\";",
-      "",
-      "const route = useRoute();"
-    ],
+    "body": ["import { useRoute } from \"vue-router\";", "", "const route = useRoute();"],
     "description": "import useRoute and create route"
   },
   "import api func": {
