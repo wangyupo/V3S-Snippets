@@ -2,6 +2,16 @@
 
 All notable changes to the "V3S Snippets" extension will be documented in this file.
 
+### 0.0.24
+
+_2023-10-18_
+
+#### Features
+
+- Snippets `v3s-assets`: Create code `@/assets/path`.
+- Snippets `v3s-nextTick`: Create code `nextTick(() => {});`.
+- Snippets `:dp`: Create code `:deep() {}`.
+
 ### 0.0.13
 
 _2023-08-28_
