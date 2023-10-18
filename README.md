@@ -21,6 +21,7 @@ This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s)
 | `v3s-wrapper`        | v3s section wrapper           |
 | `v3s-scr`            | scope.row directive           |
 | `v3s-loading`        | v-loading="loading" directive |
+| `v3s-assets`         | @/assets/path                 |
 
 ### Script
 
@@ -54,6 +55,13 @@ This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s)
 | `v3s-onerrorcaptured` | create code `onErrorCaptured(() => {});`                  |
 | `v3s-onunmounted`     | create code `onUnmounted(() => {});`                      |
 | `v3s-onbeforeunmount` | create code `onBeforeUnmount(() => {});`                  |
+| `v3s-nextTick`        | create code `nextTick(() => {});`                         |
+
+### scss
+
+| Snippet | Purpose    |
+| ------- | ---------- |
+| `:dp`   | :deep() {} |
 
 ## Release Notes
 
