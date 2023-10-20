@@ -2,14 +2,14 @@
   "Element-plus el-button": {
     "prefix": "v3s-btn",
     "body": [
-      "<el-button type=\"${1|primary,success,info,warning,danger|}\" @click=\"handle${2:Action}\">${3:Primary}</el-button>"
+      "<el-button type=\"${1|primary,success,info,warning,danger,default|}\" @click=\"handle${2:Action}\">${3:Primary}</el-button>"
     ],
     "description": "Element-plus el-button"
   },
   "Element-plus el-button link": {
     "prefix": "v3s-btnlink",
     "body": [
-      "<el-button type=\"${1|primary,success,info,warning,danger|}\" link @click=\"handle${2:Action}\">${3:Primary}</el-button>"
+      "<el-button type=\"${1|primary,success,info,warning,danger,default|}\" link @click=\"handle${2:Action}\">${3:Primary}</el-button>"
     ],
     "description": "Element-plus el-button link"
   },
