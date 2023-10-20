@@ -160,6 +160,10 @@
     "prefix": ["v3s-cfn"],
     "body": ["// ${1:用途}", "const ${2:fn} = ($3) => {$4};"]
   },
+  "const fn debounce": {
+    "prefix": ["v3s-cfn-debounce"],
+    "body": ["// ${1:用途}", "const ${2:fn} = debounce(($3) => {$4}, 200);"]
+  },
   "vue3 router": {
     "prefix": ["v3s-router"],
     "body": [
