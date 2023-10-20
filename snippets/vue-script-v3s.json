@@ -126,6 +126,10 @@
       ""
     ]
   },
+  "use pinia patch in vue3": {
+    "prefix": ["v3s-usepinia-patch"],
+    "body": ["${1:demoStore}.\\$patch(state => {", " state.${2:variable} = ${3:false};", "});"]
+  },
   "create pinia store": {
     "prefix": ["v3s-pinia"],
     "body": [
