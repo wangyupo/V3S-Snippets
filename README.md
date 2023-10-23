@@ -37,6 +37,7 @@ This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s)
 | `v3s-loading`         | create loading related code                               |
 | `v3s-cfn`             | create an arrow function with functional annotation       |
 | `v3s-defineProps`     | create defineProps code                                   |
+| `v3s-defineEmits`     | create defineEmits code                                   |
 | `v3s-router`          | import useRouter and create router logic code             |
 | `v3s-api`             | create api logic code                                     |
 | `v3s-params`          | create code `const params = {}`                           |
