@@ -212,6 +212,15 @@
     ],
     "description": "create defineProps code"
   },
+  "create emit": {
+    "prefix": ["v3s-defineEmits"],
+    "body": [
+      "const props = defineEmits([",
+      "  ${1:emitMethod}",
+      "]);"
+    ],
+    "description": "create defineEmits code"
+  },
   "arrow function": {
     "prefix": ["v3s-anfn"],
     "body": ["(${1:param}) => {", "\t$2", "}"],
