@@ -216,7 +216,7 @@
     "prefix": ["v3s-defineEmits"],
     "body": [
       "const emit = defineEmits([",
-      "  ${1:emitMethod}",
+      "  \"${1:emit}\"",
       "]);"
     ],
     "description": "create defineEmits code"
