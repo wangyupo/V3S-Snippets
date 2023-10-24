@@ -215,7 +215,7 @@
   "create emit": {
     "prefix": ["v3s-defineEmits"],
     "body": [
-      "const props = defineEmits([",
+      "const emit = defineEmits([",
       "  ${1:emitMethod}",
       "]);"
     ],
