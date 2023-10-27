@@ -71,7 +71,7 @@
   },
   "Vue3 defineExpose": {
     "prefix": "v3s-defineExpose",
-    "body": ["defineExpose(() => {", "\t${1}", "});"],
+    "body": ["defineExpose({", "\t${1}", "});"],
     "description": "Vue3 defineExpose"
   }
 }
