@@ -68,5 +68,10 @@
     "prefix": "v3s-nextTick",
     "body": ["nextTick(() => {", "\t${1}", "});"],
     "description": "Vue3 nextTick func"
+  },
+  "Vue3 defineExpose": {
+    "prefix": "v3s-defineExpose",
+    "body": ["defineExpose(() => {", "\t${1}", "});"],
+    "description": "Vue3 defineExpose"
   }
 }
