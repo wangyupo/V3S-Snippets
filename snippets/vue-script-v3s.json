@@ -68,27 +68,6 @@
     ],
     "description": "use v3s dialog"
   },
-  "use element-plus message-box": {
-    "prefix": "v3s-usemessagebox",
-    "body": [
-      "// <el-button text @click=\"open\">Click to open the Message Box</el-button>",
-      "import { ElMessage, ElMessageBox } from \"element-plus\";",
-      "",
-      "const open = () => {",
-      "  ElMessageBox.confirm(`弹框内容?`, \"弹框标题\", {",
-      "    confirmButtonText: \"确认\",",
-      "    cancelButtonText: \"取消\",",
-      "    type: \"warning\",",
-      "  }).then(() => {",
-      "    ElMessage({",
-      "      type: \"success\",",
-      "      message: \"提示语\",",
-      "    });",
-      "  });",
-      "};",
-      ""
-    ]
-  },
   "code 200": {
     "prefix": ["v3s-code200"],
     "body": ["if (res.code == 200) {}"]
