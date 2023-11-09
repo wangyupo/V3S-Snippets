@@ -17,10 +17,5 @@
     "prefix": "v3s-input",
     "body": ["<el-input v-model=\"input\" placeholder=\"Please input\" />"],
     "description": "Element-plus el-input"
-  },
-  "create el-message": {
-    "prefix": ["v3s-elmsg"],
-    "body": ["ElMessage({", "  message: \"${1:提示信息}\",", "  type: \"${2|success,warning,info,error|}\",", "});"],
-    "description": "create el-message code"
   }
 }
