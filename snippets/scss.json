@@ -1,11 +1,7 @@
 {
   ":deep() penetration style": {
-    "prefix": ":dp",
-    "body": [
-      ":deep(${1}) {",
-      "  ${2}",
-      "}"
-    ],
+    "prefix": [":dp", ":deep", "v3s:deep"],
+    "body": [":deep(${1}) {", "\t${2}", "}"],
     "description": ":deep() penetration style"
   }
 }
