@@ -1,8 +1,7 @@
 {
   "use element-plus message-box": {
-    "prefix": "v3s-usemessagebox",
+    "prefix": "v3s-elmessagebox",
     "body": [
-      "// <el-button text @click=\"open\">Click to open the Message Box</el-button>",
       "${1:import { ElMessage, ElMessageBox \\} from \"element-plus\";}",
       "",
       "const open = () => {",
