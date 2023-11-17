@@ -24,5 +24,17 @@
   "assets": {
     "prefix": ["v3s-assets"],
     "body": ["@/assets/$1"]
+  },
+  "template": {
+    "prefix": ["v3s-template"],
+    "body": ["<template>", "</template>"]
+  },
+  "template with slot": {
+    "prefix": ["v3s-template-slot"],
+    "body": ["<template #${1:slot-name}>", "</template>"]
+  },
+  "v-for": {
+    "prefix": ["v3s-v-for"],
+    "body": ["v-for=\"(${1|item}, ${2|index}) in ${3:array}\" :key=\"${2|index}\""]
   }
 }
