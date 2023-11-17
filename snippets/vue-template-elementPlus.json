@@ -1,20 +1,20 @@
 {
   "Element-plus el-button": {
-    "prefix": "v3s-btn",
+    "prefix": "v3s-el-btn",
     "body": [
       "<el-button type=\"${1|primary,success,info,warning,danger,default|}\" @click=\"handle${2:Action}\">${3:Primary}</el-button>"
     ],
     "description": "Element-plus el-button"
   },
   "Element-plus el-button link": {
-    "prefix": "v3s-btnlink",
+    "prefix": "v3s-el-btnlink",
     "body": [
       "<el-button type=\"${1|primary,success,info,warning,danger,default|}\" link @click=\"handle${2:Action}\">${3:Primary}</el-button>"
     ],
     "description": "Element-plus el-button link"
   },
   "Element-plus el-input": {
-    "prefix": "v3s-input",
+    "prefix": "v3s-el-input",
     "body": ["<el-input v-model=\"input\" placeholder=\"Please input\" />"],
     "description": "Element-plus el-input"
   }
