@@ -27,14 +27,14 @@
   },
   "template": {
     "prefix": ["v3s-template"],
-    "body": ["<template>", "</template>"]
+    "body": ["<template>", "\t${1:content}", "</template>"]
   },
   "template with slot": {
     "prefix": ["v3s-template-slot"],
-    "body": ["<template #${1:slot-name}>", "</template>"]
+    "body": ["<template #${1:slot-name}>", "\t${2:content}", "</template>"]
   },
   "v-for": {
     "prefix": ["v3s-v-for"],
-    "body": ["v-for=\"(${1|item}, ${2|index}) in ${3:array}\" :key=\"${2|index}\""]
+    "body": ["v-for=\"(${1:item}, ${2:index}) in ${3:array}\" :key=\"${2:index}\""]
   }
 }
