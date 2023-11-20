@@ -6,6 +6,24 @@ From the extension of vscode, search for "v3s snippets" and install it to use it
 
 <img src="assets/snippets.png" alt="Logo" width="720" height="380">
 
+Here are some usage examples.
+
+`v3s-base`
+
+<img src="assets/v3s-base.gif" alt="Logo" width="720" height="380">
+
+`v3s-table`
+
+<img src="assets/v3s-table.gif" alt="Logo" width="720" height="380">
+
+`v3s-v-for`
+
+<img src="assets/v3s-v-for.gif" alt="Logo" width="720" height="380">
+
+`v3s-imdapi`
+
+<img src="assets/v3s-imdapi.gif" alt="Logo" width="720" height="380">
+
 ## Snippets
 
 ### Vue
@@ -19,13 +37,18 @@ From the extension of vscode, search for "v3s snippets" and install it to use it
 
 ### Template
 
-| Snippet              | Purpose                       |
-| -------------------- | ----------------------------- |
-| `v3s-table-template` | v3s table custom column       |
-| `v3s-wrapper`        | v3s section wrapper           |
-| `v3s-scr`            | scope.row directive           |
-| `v3s-loading`        | v-loading="loading" directive |
-| `v3s-assets`         | @/assets/path                 |
+| Snippet              | Purpose                                                       |
+| -------------------- | ------------------------------------------------------------- |
+| `v3s-table-template` | v3s table custom column                                       |
+| `v3s-wrapper`        | v3s section wrapper `RhWrapper title="示例标题"></RhWrapper>` |
+| `v3s-scr`            | scope.row directive                                           |
+| `v3s-loading`        | v-loading="loading" directive                                 |
+| `v3s-assets`         | @/assets/path                                                 |
+| `v3s-v-for`          | v-for="(item, index) in array" :key="index"                   |
+| `v3s-template-slot`  | <template #slot-name>content</template>                       |
+| `v3s-elbtn`          | <el-button type="primary">Primary</el-button>                 |
+| `v3s-elbtn-link`     | <el-button type="primary" link>Primary</el-button>            |
+| `v3s-elinput`        | <el-input v-model="input" placeholder="Please input" />       |
 
 ### Script
 
@@ -61,6 +84,7 @@ From the extension of vscode, search for "v3s snippets" and install it to use it
 | `v3s-onunmounted`     | create code `onUnmounted(() => {});`                      |
 | `v3s-onbeforeunmount` | create code `onBeforeUnmount(() => {});`                  |
 | `v3s-nextTick`        | create code `nextTick(() => {});`                         |
+| `v3s-defineExpose`    | create code `defineExpose({});`                           |
 
 ### scss
 
