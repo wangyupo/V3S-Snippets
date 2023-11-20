@@ -2,6 +2,10 @@
 
 This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s).
 
+From the extension of vscode, search for "v3s snippets" and install it to use it.
+
+<img src="assets/snippets.png" alt="Logo" width="720" height="380">
+
 ## Snippets
 
 ### Vue
