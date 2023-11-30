@@ -11,10 +11,7 @@
       "    type: \"warning\",",
       "  })",
       "    .then(() => {",
-      "      ElMessage({",
-      "        type: \"success\",",
-      "        message: \"提示语\",",
-      "      });",
+      "      ElMessage({ type: \"${2|success,warning,info,error|}\", message: \"${3:提示信息}\" })",
       "    })",
       "    .catch(() => {});",
       "};",
@@ -26,10 +23,7 @@
     "body": [
       "${1:import { ElMessage \\} from \"element-plus\";}",
       "",
-      "ElMessage({",
-      "  message: \"${2:提示信息}\",",
-      "  type: \"${3|success,warning,info,error|}\",",
-      "});"
+      "ElMessage({ type: \"${2|success,warning,info,error|}\", message: \"${3:提示信息}\" })"
     ],
     "description": "create el-message code"
   }
