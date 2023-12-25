@@ -44,11 +44,16 @@ Here are some usage examples.
 | `v3s-scr`            | scope.row directive                                           |
 | `v3s-loading`        | v-loading="loading" directive                                 |
 | `v3s-assets`         | @/assets/path                                                 |
+| `v3s-template`       | create code `<template></template>`                           |
+| `v3s-template-slot`  | create code `<template #slot-name></template>`                |
 | `v3s-v-for`          | v-for="(item, index) in array" :key="index"                   |
 | `v3s-template-slot`  | <template #slot-name>content</template>                       |
 | `v3s-elbtn`          | <el-button type="primary">Primary</el-button>                 |
 | `v3s-elbtn-link`     | <el-button type="primary" link>Primary</el-button>            |
 | `v3s-elinput`        | <el-input v-model="input" placeholder="Please input" />       |
+| `v3s-elmsg`          | import el-message and create ElMessage code                   |
+| `v3s-elmsg`          | import el-message and create ElMessage code                   |
+| `v3s-elmessagebox`   | import ElMessage, ElMessageBox and create use demo            |
 
 ### Script
 
@@ -56,7 +61,6 @@ Here are some usage examples.
 | --------------------- | --------------------------------------------------------- |
 | `v3s-usedialog`       | import dialog and create logic code                       |
 | `v3s-useelform`       | create el-form logic code                                 |
-| `v3s-usemessagebox`   | import ElMessage, ElMessageBox and create use demo        |
 | `v3s-elmsg`           | create ElMessage template code                            |
 | `v3s-imdapi`          | create code `import {} from "@/api/xx.js"`                |
 | `v3s-imdutils`        | create code `import {} from "@/utils/xx.js";`             |
