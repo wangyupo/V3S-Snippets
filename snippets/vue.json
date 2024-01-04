@@ -273,8 +273,6 @@
       "</template>",
       "",
       "<script setup>",
-      "import { ref, watch } from \"vue\";",
-      "",
       "/** dialog START **/",
       "const emits = defineEmits([\"opened\", \"closed\"]);",
       "const dialogVisible = defineModel();",
