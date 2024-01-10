@@ -59,9 +59,9 @@
       "",
       "// resetForm(ruleFormRef.value);",
       "// 重置表单",
-      "const resetForm = formEl => {",
-      "  if (!formEl) return;",
-      "  formEl.resetFields();",
+      "const resetForm = () => {",
+      "  if (!ruleFormRef.value) return;",
+      "  ruleFormRef.value.resetFields();",
       "};",
       "/** el-form END **/",
       ""
