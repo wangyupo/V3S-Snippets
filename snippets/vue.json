@@ -286,6 +286,7 @@
       "const closed = () => {",
       "  resetData();",
       "  emits(\"closed\");",
+      "  dialogVisible.value = false",
       "};",
       "",
       "// 重置数据",
