@@ -32,6 +32,18 @@
         "path": "./snippets/vue-script-elementPlus.json"
       },
       {
+        "language": "typescript",
+        "path": "./snippets/vue-script.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-script-v3s.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-script-elementPlus.json"
+      },
+      {
         "language": "vue",
         "path": "./snippets/vue.json"
       },
