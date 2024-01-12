@@ -204,5 +204,9 @@
     "prefix": ["v3s-anfn"],
     "body": ["(${1:param}) => {", "\t$2", "}"],
     "description": "create arrow function"
+  },
+  "scope row": {
+    "prefix": ["v3s-scr"],
+    "body": ["scope.row"]
   }
 }
