@@ -44,23 +44,23 @@ Here are some usage examples.
 
 ### Template
 
-| Snippet              | Purpose                                                       |
-| -------------------- | ------------------------------------------------------------- |
-| `v3s-table-template` | v3s table custom column                                       |
-| `v3s-wrapper`        | v3s section wrapper `RhWrapper title="示例标题"></RhWrapper>` |
-| `v3s-scr`            | scope.row directive                                           |
-| `v3s-loading`        | v-loading="loading" directive                                 |
-| `v3s-assets`         | @/assets/path                                                 |
-| `v3s-template`       | create code `<template></template>`                           |
-| `v3s-template-slot`  | create code `<template #slot-name></template>`                |
-| `v3s-v-for`          | v-for="(item, index) in array" :key="index"                   |
-| `v3s-template-slot`  | <template #slot-name>content</template>                       |
-| `v3s-elbtn`          | <el-button type="primary">Primary</el-button>                 |
-| `v3s-elbtn-link`     | <el-button type="primary" link>Primary</el-button>            |
-| `v3s-elinput`        | <el-input v-model="input" placeholder="Please input" />       |
-| `v3s-elmsg`          | import el-message and create ElMessage code                   |
-| `v3s-elmsg`          | import el-message and create ElMessage code                   |
-| `v3s-elmessagebox`   | import ElMessage, ElMessageBox and create use demo            |
+| Snippet              | Purpose                                                               |
+| -------------------- | --------------------------------------------------------------------- |
+| `v3s-table-template` | v3s table custom column                                               |
+| `v3s-wrapper`        | v3s section wrapper `RhWrapper title="示例标题"></RhWrapper>`         |
+| `v3s-scr`            | scope.row directive                                                   |
+| `v3s-loading`        | v-loading="loading" directive                                         |
+| `v3s-assets`         | create code `@/assets/path`                                           |
+| `v3s-template`       | create code `<template></template>`                                   |
+| `v3s-template-slot`  | create code `<template #slot-name></template>`                        |
+| `v3s-v-for`          | create code `v-for="(item, index) in array" :key="index"`             |
+| `v3s-template-slot`  | create code `<template #slot-name>content</template>`                 |
+| `v3s-elbtn`          | create code `<el-button type="primary">Primary</el-button>`           |
+| `v3s-elbtn-link`     | create code `<el-button type="primary" link>Primary</el-button>`      |
+| `v3s-elinput`        | create code `<el-input v-model="input" placeholder="Please input" />` |
+| `v3s-elmsg`          | import el-message and create ElMessage code                           |
+| `v3s-elmsg`          | import el-message and create ElMessage code                           |
+| `v3s-elmessagebox`   | import ElMessage, ElMessageBox and create use demo                    |
 
 ### Script
 
