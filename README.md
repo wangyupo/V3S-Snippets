@@ -74,6 +74,7 @@ Here are some usage examples.
 | `v3s-imdhooks`        | create code `import {} from "@/hooks/xx.js";`             |
 | `v3s-loading`         | create loading related code                               |
 | `v3s-cfn`             | create an arrow function with functional annotation       |
+| `v3s-scr`             | create code `scope.row";`                                 |
 | `v3s-defineProps`     | create defineProps code                                   |
 | `v3s-defineEmits`     | create defineEmits code                                   |
 | `v3s-router`          | import useRouter and create router logic code             |
