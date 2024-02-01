@@ -28,12 +28,19 @@ Here are some usage examples.
 
 ### Vue
 
-| Snippet               | Purpose                                                  |
-| --------------------- | -------------------------------------------------------- |
-| `v3s-base`            | Single file component base with v3s                      |
-| `v3s-table`           | Single file component base with v3s table                |
-| `v3s-table-selection` | Single file component base with v3s table with selection |
-| `v3s-dialog`          | Single file component base with v3s dialog               |
+| Snippet                           | Purpose                                                          |
+| --------------------------------- | ---------------------------------------------------------------- |
+| `v3s-base`                        | Single file component base with v3s                              |
+| `v3s-table`                       | Single file component base with v3s table                        |
+| `v3s-table-selection`             | Single file component base with v3s table with selection         |
+| `v3s-dialog`                      | Single file component base with v3s dialog                       |
+| `v3s-echart-line`                 | Single file component base with v3s echarts line                 |
+| `v3s-echart-bar`                  | Single file component base with v3s echarts bar                  |
+| `v3s-echart-bar-horizontal`       | Single file component base with v3s echarts bar horizontal       |
+| `v3s-echart-bar-stack`            | Single file component base with v3s echarts stack bar            |
+| `v3s-echart-bar-stack-horizontal` | Single file component base with v3s echarts stack bar horizontal |
+| `v3s-echart-pie`                  | Single file component base with v3s echarts pie                  |
+| `v3s-echart-pie-nightingale`      | Single file component base with v3s echarts nightingale pie      |
 
 ### Template
 
