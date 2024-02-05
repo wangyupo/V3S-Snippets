@@ -90,6 +90,45 @@
       "  .finally(() => {});"
     ]
   },
+  "api curd": {
+    "prefix": ["v3s-api-curd"],
+    "body": [
+      "import request from \"@/utils/request\";",
+      "const baseURl = import.meta.env.VITE_SYSTEM_BASE_URL;",
+      "",
+      "export const get${1/(.*)/${1:/capitalize}/} = params => {",
+      "\treturn request({",
+      "\t\turl: `\\${baseURl}/${1:api}`,",
+      "\t\tmethod: \"get\",",
+      "\t\tparams,",
+      "\t});",
+      "};",
+      "",
+      "export const post${1/(.*)/${1:/capitalize}/} = data => {",
+      "\treturn request({",
+      "\t\turl: `\\${baseURl}/${1:api}`,",
+      "\t\tmethod: \"post\",",
+      "\t\tdata,",
+      "\t});",
+      "};",
+      "",
+      "export const put${1/(.*)/${1:/capitalize}/} = (id, data) => {",
+      "\treturn request({",
+      "\t\turl: `\\${baseURl}/${1:api}/\\${id}`,",
+      "\t\tmethod: \"put\",",
+      "\t\tdata,",
+      "\t});",
+      "};",
+      "",
+      "export const delete${1/(.*)/${1:/capitalize}/} = id => {",
+      "\treturn request({",
+      "\t\turl: `\\${baseURl}/${1:api}/\\${id}`,",
+      "\t\tmethod: \"delete\",",
+      "\t});",
+      "};",
+      ""
+    ]
+  },
   "use pinia in vue3": {
     "prefix": ["v3s-usepinia"],
     "body": [
