@@ -79,6 +79,7 @@ Here are some usage examples.
 | `v3s-defineEmits`     | create defineEmits code                                   |
 | `v3s-router`          | import useRouter and create router logic code             |
 | `v3s-api`             | create api logic code                                     |
+| `v3s-api-curd`        | create api curd code                                      |
 | `v3s-params`          | create code `const params = {}`                           |
 | `v3s-code200`         | create code`if (res.code === 200) {}`                     |
 | `v3s-usepinia`        | import a pinia store and use it                           |
