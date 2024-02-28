@@ -57,7 +57,7 @@
       "  });",
       "};",
       "",
-      "// resetForm(ruleFormRef.value);",
+      "// resetForm();",
       "// 重置表单",
       "const resetForm = () => {",
       "  if (!ruleFormRef.value) return;",
