@@ -69,6 +69,7 @@ Here are some usage examples.
 | `v3s-usedialog`       | import dialog and create logic code                       |
 | `v3s-useelform`       | create el-form logic code                                 |
 | `v3s-elmsg`           | create ElMessage template code                            |
+| `v3s-elicon`          | create code `import {} from "@element-plus/icons-vue";`   |
 | `v3s-imdapi`          | create code `import {} from "@/api/xx.js"`                |
 | `v3s-imdutils`        | create code `import {} from "@/utils/xx.js";`             |
 | `v3s-imdhooks`        | create code `import {} from "@/hooks/xx.js";`             |
