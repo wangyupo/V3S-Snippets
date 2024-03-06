@@ -24,5 +24,13 @@
       "ElMessage({ type: \"${2|success,warning,info,error|}\", message: \"${3:提示信息}\" })"
     ],
     "description": "create el-message code"
+  },
+  "import element-plus/icons-vue": {
+    "prefix": ["v3s-imd-elicon"],
+    "body": [
+      "import { ${1:Plus} } from \"@element-plus/icons-vue\";",
+      ""
+    ],
+    "description": "import element-plus/icons-vue"
   }
 }
