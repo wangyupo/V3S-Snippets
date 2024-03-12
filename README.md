@@ -73,6 +73,7 @@ Here are some usage examples.
 | `v3s-imdapi`          | create code `import {} from "@/api/xx.js"`                |
 | `v3s-imdutils`        | create code `import {} from "@/utils/xx.js";`             |
 | `v3s-imdhooks`        | create code `import {} from "@/hooks/xx.js";`             |
+| `v3s-imdenums`        | create code `import {} from "@/enums/xx.js";`             |
 | `v3s-loading`         | create loading related code                               |
 | `v3s-cfn`             | create an arrow function with functional annotation       |
 | `v3s-scr`             | create code `scope.row";`                                 |
