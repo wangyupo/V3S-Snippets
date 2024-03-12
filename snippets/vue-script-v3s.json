@@ -218,6 +218,11 @@
     ],
     "description": "import hooks"
   },
+  "import enums": {
+    "prefix": ["v3s-imdenums"],
+    "body": ["import { $2 } from \"@/enums/${1:index}.js\";"],
+    "description": "import enums"
+  },
   "create props": {
     "prefix": ["v3s-defineProps"],
     "body": [
