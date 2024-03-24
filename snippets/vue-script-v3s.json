@@ -237,12 +237,13 @@
   },
   "create emit": {
     "prefix": ["v3s-defineEmits"],
-    "body": [
-      "const emit = defineEmits([",
-      "  \"${1:emit}\"",
-      "]);"
-    ],
+    "body": ["const emits = defineEmits([\"${1:emit}\"]);"],
     "description": "create defineEmits code"
+  },
+  "use emit": {
+    "prefix": ["v3s-useEmits"],
+    "body": ["emits(\"${1:emit}\");"],
+    "description": "create use emits code"
   },
   "arrow function": {
     "prefix": ["v3s-anfn"],
