@@ -172,7 +172,7 @@
   },
   "vue3 loading": {
     "prefix": ["v3s-loading"],
-    "body": ["const loading = ref(false);", "// loading.value = true;", "// loading.value = false;"]
+    "body": ["const loading = ref(false); // 加载状态", "// loading.value = true;", "// loading.value = false;"]
   },
   "const fn": {
     "prefix": ["v3s-cfn"],
