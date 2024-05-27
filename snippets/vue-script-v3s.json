@@ -253,5 +253,17 @@
   "scope row": {
     "prefix": ["v3s-scr"],
     "body": ["scope.row"]
+  },
+  "back fill form by props data": {
+    "prefix": ["v3s-backfillFormByPropsData"],
+    "body": [
+      "if (props.data.id) {",
+      "\tfor (let key in props.data) {",
+      "\t\tif (ruleForm.hasOwnProperty(key)) {",
+      "\t\t\truleForm[key] = props.data[key];",
+      "\t\t}",
+      "\t}",
+      "}"
+    ]
   }
 }
