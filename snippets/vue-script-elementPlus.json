@@ -3,7 +3,7 @@
     "prefix": "v3s-elmessagebox",
     "body": [
       "import { ElMessage, ElMessageBox \\} from \"element-plus\";${1}",
-      "ElMessageBox.confirm(`弹框内容?`, \"弹框标题\", {",
+      "ElMessageBox.confirm(`弹框内容?`, \"系统提示\", {",
       "  confirmButtonText: \"确认\",",
       "  cancelButtonText: \"取消\",",
       "  type: \"warning\",",
