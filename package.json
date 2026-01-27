@@ -2,21 +2,39 @@
   "icon": "assets/v3s.jpg",
   "name": "v3s-snippets",
   "displayName": "V3S Snippets",
-  "description": "V3S code snippets for VSCode",
+  "description": "Vue 3 + Element Plus + Pinia 代码片段，快速生成常用代码模板",
   "author": "youper",
-  "version": "0.0.77",
+  "version": "0.0.80",
   "publisher": "youper",
   "repository": {
     "type": "git",
     "url": "https://github.com/wangyupo/V3S-Snippets"
   },
+  "homepage": "https://github.com/wangyupo/V3S-Snippets#readme",
+  "bugs": {
+    "url": "https://github.com/wangyupo/V3S-Snippets/issues"
+  },
   "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue3",
+    "snippets",
+    "element-plus",
+    "pinia",
+    "vite",
+    "typescript",
+    "javascript"
+  ],
   "engines": {
     "vscode": "^1.81.0"
   },
   "categories": [
     "Snippets"
   ],
+  "galleryBanner": {
+    "color": "#42b883",
+    "theme": "dark"
+  },
   "contributes": {
     "snippets": [
       {
@@ -69,6 +87,10 @@
       },
       {
         "language": "scss",
+        "path": "./snippets/scss.json"
+      },
+      {
+        "language": "css",
         "path": "./snippets/scss.json"
       }
     ]
