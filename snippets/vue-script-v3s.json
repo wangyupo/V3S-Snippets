@@ -36,13 +36,14 @@
       "//   <el-button @click=\"closed\">取消</el-button>",
       "// </div>",
       "",
-      "import { reactive, ref } from \"vue\";",
+      "import { reactive, ref, useTemplateRef } from \"vue\";",
       "",
       "/** el-form START **/",
-      "const ruleFormRef = ref();",
-      "const ruleForm = reactive({",
+      "const ruleFormRef = useTemplateRef('ruleFormRef');",
+      "const getInitialForm = () => ({",
       "  name: \"\",",
       "});",
+      "const ruleForm = reactive(getInitialForm());",
       "const rules = reactive({",
       "  name: [{ required: true, message: \"请输入名称\", trigger: \"blur\" }],",
       "});",
@@ -62,22 +63,35 @@
       "const resetForm = () => {",
       "  if (!ruleFormRef.value) return;",
       "  ruleFormRef.value.resetFields();",
+      "  Object.assign(ruleForm, getInitialForm());",
       "};",
       "/** el-form END **/",
       ""
     ],
-    "description": "use v3s dialog"
+    "description": "create el-form with validation"
   },
   "code 200": {
-    "prefix": ["v3s-code200"],
-    "body": ["if (res.code == 200) {}"]
+    "prefix": [
+      "v3s-code200"
+    ],
+    "body": [
+      "if (res.code == 200) {}"
+    ],
+    "description": "create response code check"
   },
   "params object": {
-    "prefix": ["v3s-params"],
-    "body": ["const params = {}"]
+    "prefix": [
+      "v3s-params"
+    ],
+    "body": [
+      "const params = {}"
+    ],
+    "description": "create params object"
   },
   "api": {
-    "prefix": ["v3s-api"],
+    "prefix": [
+      "v3s-api"
+    ],
     "body": [
       "const params = {}",
       "${1:api}(params)",
@@ -88,10 +102,33 @@
       "  })",
       "  .catch(() => {})",
       "  .finally(() => {});"
-    ]
+    ],
+    "description": "create api call with promise"
+  },
+  "api with function": {
+    "prefix": [
+      "v3s-fetchapi"
+    ],
+    "body": [
+      "// ${1:接口请求}",
+      "const fetch${2/(.*)/${1:/capitalize}/} = () => {",
+      "  const params = {};",
+      "  ${2:api}(params)",
+      "    .then(res => {",
+      "      if (res.code == 200) {",
+      "        $3",
+      "      }",
+      "    })",
+      "    .catch(() => {})",
+      "    .finally(() => {});",
+      "};"
+    ],
+    "description": "create api call with function wrapper"
   },
   "api curd": {
-    "prefix": ["v3s-api-curd"],
+    "prefix": [
+      "v3s-api-curd"
+    ],
     "body": [
       "import request from \"@/utils/request\";",
       "const baseURl = import.meta.env.VITE_SYSTEM_BASE_URL;",
@@ -127,10 +164,13 @@
       "\t});",
       "};",
       ""
-    ]
+    ],
+    "description": "create CRUD api functions"
   },
   "use pinia in vue3": {
-    "prefix": ["v3s-usepinia"],
+    "prefix": [
+      "v3s-usepinia"
+    ],
     "body": [
       "import { use${1/(.*)/${1:/capitalize}/}Store } from \"@/stores/${1:demo}.js\";",
       "import { storeToRefs } from \"pinia\";",
@@ -142,14 +182,24 @@
       "//   state.${2:variable} = ${3:false};",
       "// });",
       ""
-    ]
+    ],
+    "description": "import and use pinia store"
   },
   "use pinia patch in vue3": {
-    "prefix": ["v3s-usepinia-patch"],
-    "body": ["${1:demoStore}.\\$patch(state => {", "\tstate.${2:variable} = ${3:false};", "});"]
+    "prefix": [
+      "v3s-usepinia-patch"
+    ],
+    "body": [
+      "${1:demoStore}.\\$patch(state => {",
+      "\tstate.${2:variable} = ${3:false};",
+      "});"
+    ],
+    "description": "pinia $patch to update state"
   },
   "create pinia store": {
-    "prefix": ["v3s-pinia"],
+    "prefix": [
+      "v3s-pinia"
+    ],
     "body": [
       "import { defineStore } from \"pinia\";",
       "",
@@ -168,22 +218,44 @@
       "  persist: true, // localstorage yes or no",
       "});",
       ""
-    ]
+    ],
+    "description": "create pinia store (options API)"
   },
   "vue3 loading": {
-    "prefix": ["v3s-loading"],
-    "body": ["const loading = ref(false); // 加载状态", "// loading.value = true;", "// loading.value = false;"]
+    "prefix": [
+      "v3s-loading"
+    ],
+    "body": [
+      "const loading = ref(false); // 加载状态",
+      "// loading.value = true;",
+      "// loading.value = false;"
+    ],
+    "description": "create loading ref"
   },
   "const fn": {
-    "prefix": ["v3s-cfn"],
-    "body": ["// ${1:用途}", "const ${2:fn} = ($3) => {$4};"]
+    "prefix": [
+      "v3s-cfn"
+    ],
+    "body": [
+      "// ${1:用途}",
+      "const ${2:fn} = ($3) => {$4};"
+    ],
+    "description": "create arrow function with comment"
   },
   "const fn debounce": {
-    "prefix": ["v3s-cfn-debounce"],
-    "body": ["// ${1:用途}", "const ${2:fn} = debounce(($3) => {$4}, 200);"]
+    "prefix": [
+      "v3s-cfn-debounce"
+    ],
+    "body": [
+      "// ${1:用途}",
+      "const ${2:fn} = debounce(($3) => {$4}, 200);"
+    ],
+    "description": "create debounced arrow function"
   },
   "vue3 router": {
-    "prefix": ["v3s-router"],
+    "prefix": [
+      "v3s-router"
+    ],
     "body": [
       "import { useRouter } from \"vue-router\";",
       "",
@@ -196,22 +268,38 @@
     "description": "import useRouter and create router"
   },
   "vue3 route": {
-    "prefix": ["v3s-route"],
-    "body": ["import { useRoute } from \"vue-router\";", "", "const route = useRoute();"],
+    "prefix": [
+      "v3s-route"
+    ],
+    "body": [
+      "import { useRoute } from \"vue-router\";",
+      "",
+      "const route = useRoute();"
+    ],
     "description": "import useRoute and create route"
   },
   "import api func": {
-    "prefix": ["v3s-imdapi"],
-    "body": ["import { $2 } from \"@/api/${1:api}.js\";"],
+    "prefix": [
+      "v3s-imdapi"
+    ],
+    "body": [
+      "import { $2 } from \"@/api/${1:api}.js\";"
+    ],
     "description": "import api func"
   },
   "import utils common": {
-    "prefix": ["v3s-imdutils"],
-    "body": ["import { $2 } from \"@/utils/${1:index}.js\";"],
+    "prefix": [
+      "v3s-imdutils"
+    ],
+    "body": [
+      "import { $2 } from \"@/utils/${1:index}.js\";"
+    ],
     "description": "import utils"
   },
   "import hooks": {
-    "prefix": ["v3s-imdhooks"],
+    "prefix": [
+      "v3s-imdhooks"
+    ],
     "body": [
       "import { use${1/(.*)/${1:/capitalize}/} } from \"@/hooks/use${1/(.*)/${1:/capitalize}/}.js\";",
       "const { $2 } = use${1/(.*)/${1:/capitalize}/}();"
@@ -219,51 +307,79 @@
     "description": "import hooks"
   },
   "import enums": {
-    "prefix": ["v3s-imdenums"],
-    "body": ["import { $2 } from \"@/enums/${1:index}.js\";"],
+    "prefix": [
+      "v3s-imdenums"
+    ],
+    "body": [
+      "import { $2 } from \"@/enums/${1:index}.js\";"
+    ],
     "description": "import enums"
   },
   "create props": {
-    "prefix": ["v3s-defineProps"],
+    "prefix": [
+      "v3s-defineProps"
+    ],
     "body": [
       "const props = defineProps({",
-      "  ${1:width}: {",
+      "  ${1:prop}: {",
       "    type: ${2|String,Number,[Number\\, String],Object,Array,Function,Boolean|},",
-      "    default: \"${3:100%}\"",
+      "    default: ${3|\"\",'',0,false,null,() => ({}),() => []|}",
       "  },",
       "});"
     ],
     "description": "create defineProps code"
   },
   "create emit": {
-    "prefix": ["v3s-defineEmits"],
-    "body": ["const emits = defineEmits([\"${1:emit}\"]);"],
+    "prefix": [
+      "v3s-defineEmits"
+    ],
+    "body": [
+      "const emits = defineEmits([\"${1:emit}\"]);"
+    ],
     "description": "create defineEmits code"
   },
   "use emit": {
-    "prefix": ["v3s-useEmits"],
-    "body": ["emits(\"${1:emit}\");"],
+    "prefix": [
+      "v3s-useEmits"
+    ],
+    "body": [
+      "emits(\"${1:emit}\");"
+    ],
     "description": "create use emits code"
   },
   "arrow function": {
-    "prefix": ["v3s-anfn"],
-    "body": ["(${1:param}) => {", "\t$2", "}"],
+    "prefix": [
+      "v3s-anfn"
+    ],
+    "body": [
+      "(${1:param}) => {",
+      "\t$2",
+      "}"
+    ],
     "description": "create arrow function"
   },
   "scope row": {
-    "prefix": ["v3s-scr"],
-    "body": ["scope.row"]
+    "prefix": [
+      "v3s-scr"
+    ],
+    "body": [
+      "scope.row"
+    ],
+    "description": "el-table scope.row"
   },
   "back fill form by props data": {
-    "prefix": ["v3s-backfillFormByPropsData"],
+    "prefix": [
+      "v3s-backfill",
+      "v3s-fillform"
+    ],
     "body": [
-      "if (props.data.id) {",
-      "\tfor (let key in props.data) {",
-      "\t\tif (ruleForm.hasOwnProperty(key)) {",
-      "\t\t\truleForm[key] = props.data[key];",
-      "\t\t}",
-      "\t}",
+      "// 回填表单",
+      "if (props.${1:data}?.id) {",
+      "\tObject.keys(${2:ruleForm}).forEach(key => {",
+      "\t\tif (key in props.${1:data}) ${2:ruleForm}[key] = props.${1:data}[key];",
+      "\t});",
       "}"
-    ]
+    ],
+    "description": "back fill form by props data"
   }
 }

@@ -15,7 +15,40 @@
   },
   "Element-plus el-input": {
     "prefix": "v3s-el-input",
-    "body": ["<el-input v-model=\"input\" placeholder=\"Please input\" />"],
+    "body": [
+      "<el-input v-model=\"input\" placeholder=\"Please input\" />"
+    ],
     "description": "Element-plus el-input"
+  },
+  "Element-plus el-select": {
+    "prefix": "v3s-el-select",
+    "body": [
+      "<el-select v-model=\"value\" placeholder=\"请选择\">",
+      "  <el-option v-for=\"item in options\" :key=\"item.value\" :label=\"item.label\" :value=\"item.value\" />",
+      "</el-select>"
+    ],
+    "description": "Element-plus el-select"
+  },
+  "Element-plus el-radio-group": {
+    "prefix": "v3s-el-radio",
+    "body": [
+      "<!-- const ${1:radio} = ref(null); // Number | String -->",
+      "<el-radio-group v-model=\"${1:radio}\">",
+      "  <el-radio :value=\"${2:1}\">选项一</el-radio>",
+      "  <el-radio :value=\"${3:2}\">选项二</el-radio>",
+      "</el-radio-group>"
+    ],
+    "description": "Element-plus el-radio-group"
+  },
+  "Element-plus el-checkbox-group": {
+    "prefix": "v3s-el-checkbox",
+    "body": [
+      "<!-- const ${1:checkList} = ref([]); // Array -->",
+      "<el-checkbox-group v-model=\"${1:checkList}\">",
+      "  <el-checkbox value=\"${2:A}\">选项A</el-checkbox>",
+      "  <el-checkbox value=\"${3:B}\">选项B</el-checkbox>",
+      "</el-checkbox-group>"
+    ],
+    "description": "Element-plus el-checkbox-group"
   }
 }

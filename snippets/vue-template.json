@@ -2,39 +2,46 @@
   "table template": {
     "prefix": "v3s-table-template",
     "body": ["<template #$1=\"{ scope }\">", "\t{{ scope.row.$1 }}", "</template>"],
-    "description": "v3s table custom column"
+    "description": "el-table custom column template"
   },
   "v3s wrapper": {
     "prefix": "v3s-wrapper",
     "body": ["<RhWrapper title=\"${1:示例标题}\">", "\t$2", "</RhWrapper>"],
-    "description": "v3s section wrapper"
+    "description": "v3s section wrapper component"
   },
   "slot": {
     "prefix": "v3s-slot",
-    "body": ["<slot></slot>"]
+    "body": ["<slot></slot>"],
+    "description": "create slot outlet"
   },
   "scope row": {
     "prefix": ["v3s-scr"],
-    "body": ["scope.row"]
+    "body": ["scope.row"],
+    "description": "el-table scope.row"
   },
   "element-plus v-loading": {
     "prefix": ["v3s-loading"],
-    "body": ["v-loading=\"loading\""]
+    "body": ["v-loading=\"loading\""],
+    "description": "v-loading directive"
   },
   "assets": {
     "prefix": ["v3s-assets"],
-    "body": ["@/assets/$1"]
+    "body": ["@/assets/$1"],
+    "description": "@/assets path alias"
   },
   "template": {
     "prefix": ["v3s-template"],
-    "body": ["<template>", "\t${1:content}", "</template>"]
+    "body": ["<template>", "\t${1:content}", "</template>"],
+    "description": "template tag"
   },
   "template with slot": {
     "prefix": ["v3s-template-slot"],
-    "body": ["<template #${1:slot-name}>", "\t${2:content}", "</template>"]
+    "body": ["<template #${1:slot-name}>", "\t${2:content}", "</template>"],
+    "description": "template with named slot"
   },
   "v-for": {
     "prefix": ["v3s-v-for"],
-    "body": ["v-for=\"(${1:item}, ${2:index}) in ${3:array}\" :key=\"${2:index}\""]
+    "body": ["v-for=\"(${1:item}, ${2:index}) in ${3:array}\" :key=\"${2:index}\""],
+    "description": "v-for directive with key"
   }
 }

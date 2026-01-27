@@ -1,7 +1,63 @@
 {
   ":deep() penetration style": {
-    "prefix": [":dp", ":deep", "v3s:deep"],
+    "prefix": ["deep", "dp", ":dp", ":deep", "v3s-deep"],
     "body": [":deep(${1}) {", "\t${2}", "}"],
     "description": ":deep() penetration style"
+  },
+  "text ellipsis single line": {
+    "prefix": ["ell", "ellipsis", "v3s-ellipsis"],
+    "body": ["overflow: hidden;", "text-overflow: ellipsis;", "white-space: nowrap;"],
+    "description": "single line text ellipsis"
+  },
+  "text ellipsis multi line": {
+    "prefix": ["ellm", "ellipsis-multi", "v3s-ellipsis-multi"],
+    "body": [
+      "display: -webkit-box;",
+      "-webkit-box-orient: vertical;",
+      "-webkit-line-clamp: ${1:2};",
+      "overflow: hidden;"
+    ],
+    "description": "multi line text ellipsis"
+  },
+  "absolute center": {
+    "prefix": ["abc", "v3s-abs-center"],
+    "body": [
+      "position: absolute;",
+      "top: 50%;",
+      "left: 50%;",
+      "transform: translate(-50%, -50%);"
+    ],
+    "description": "absolute center position"
+  },
+  "absolute full": {
+    "prefix": ["abf", "v3s-abs-full"],
+    "body": [
+      "position: absolute;",
+      "top: 0;",
+      "left: 0;",
+      "right: 0;",
+      "bottom: 0;"
+    ],
+    "description": "absolute full cover"
+  },
+  "before pseudo element": {
+    "prefix": ["bef", "before", "v3s-before"],
+    "body": [
+      "&::before {",
+      "\tcontent: \"${1}\";",
+      "\t${2}",
+      "}"
+    ],
+    "description": "::before pseudo element"
+  },
+  "after pseudo element": {
+    "prefix": ["aft", "after", "v3s-after"],
+    "body": [
+      "&::after {",
+      "\tcontent: \"${1}\";",
+      "\t${2}",
+      "}"
+    ],
+    "description": "::after pseudo element"
   }
 }
