@@ -2,11 +2,15 @@
 
 This extension contains code snippets for [v3s](https://github.com/wangyupo/v3s).
 
-From the extension of vscode, search for "v3s snippets" and install it to use it.
+Vue 3 + Element Plus + Pinia 代码片段，快速生成常用代码模板。
+
+## 安装
+
+在 VSCode 扩展商店搜索 **"V3S Snippets"** 并安装即可使用。
 
 <img src="assets/snippets.png" alt="Logo" width="720" height="380">
 
-Here are some usage examples.
+## 使用示例
 
 `v3s-base`
 
@@ -34,6 +38,7 @@ Here are some usage examples.
 | `v3s-table`                       | Single file component base with v3s table                        |
 | `v3s-table-selection`             | Single file component base with v3s table with selection         |
 | `v3s-dialog`                      | Single file component base with v3s dialog                       |
+| `v3s-dialog-form`                 | Single file component base with v3s dialog with form (auto reset)|
 | `v3s-echart-line`                 | Single file component base with v3s echarts line                 |
 | `v3s-echart-bar`                  | Single file component base with v3s echarts bar                  |
 | `v3s-echart-bar-horizontal`       | Single file component base with v3s echarts bar horizontal       |
@@ -54,13 +59,17 @@ Here are some usage examples.
 | `v3s-template`       | create code `<template></template>`                                   |
 | `v3s-template-slot`  | create code `<template #slot-name></template>`                        |
 | `v3s-v-for`          | create code `v-for="(item, index) in array" :key="index"`             |
-| `v3s-template-slot`  | create code `<template #slot-name>content</template>`                 |
-| `v3s-elbtn`          | create code `<el-button type="primary">Primary</el-button>`           |
-| `v3s-elbtn-link`     | create code `<el-button type="primary" link>Primary</el-button>`      |
-| `v3s-elinput`        | create code `<el-input v-model="input" placeholder="Please input" />` |
-| `v3s-elmsg`          | import el-message and create ElMessage code                           |
-| `v3s-elmsg`          | import el-message and create ElMessage code                           |
-| `v3s-elmessagebox`   | import ElMessage, ElMessageBox and create use demo                    |
+
+### Template - Element Plus
+
+| Snippet              | Purpose                                        |
+| -------------------- | ---------------------------------------------- |
+| `v3s-el-btn`         | el-button with type options                    |
+| `v3s-el-btnlink`     | el-button link with type options               |
+| `v3s-el-input`       | el-input                                       |
+| `v3s-el-select`      | el-select with el-option                       |
+| `v3s-el-radio`       | el-radio-group (with script comment)           |
+| `v3s-el-checkbox`    | el-checkbox-group (with script comment)        |
 
 ### Script
 
@@ -76,15 +85,20 @@ Here are some usage examples.
 | `v3s-imdenums`        | create code `import {} from "@/enums/xx.js";`             |
 | `v3s-loading`         | create loading related code                               |
 | `v3s-cfn`             | create an arrow function with functional annotation       |
-| `v3s-scr`             | create code `scope.row";`                                 |
+| `v3s-cfn-debounce`    | create a debounced arrow function                         |
+| `v3s-scr`             | create code `scope.row`                                   |
 | `v3s-defineProps`     | create defineProps code                                   |
 | `v3s-defineEmits`     | create defineEmits code                                   |
+| `v3s-useEmits`        | create emits() call code                                  |
 | `v3s-router`          | import useRouter and create router logic code             |
+| `v3s-route`           | import useRoute and create route code                     |
 | `v3s-api`             | create api logic code                                     |
 | `v3s-api-curd`        | create api curd code                                      |
 | `v3s-params`          | create code `const params = {}`                           |
-| `v3s-code200`         | create code`if (res.code === 200) {}`                     |
+| `v3s-code200`         | create code `if (res.code == 200) {}`                     |
 | `v3s-usepinia`        | import a pinia store and use it                           |
+| `v3s-usepinia-patch`  | create pinia $patch code                                  |
+| `v3s-pinia`           | create pinia store file                                   |
 | `v3s-reactive`        | create code `const param = reactive({});`                 |
 | `v3s-computed`        | create code `const param = computed(() => { return });`   |
 | `v3s-watch`           | create code `watch(() => param, (newVal, oldVal) => {});` |
@@ -100,19 +114,29 @@ Here are some usage examples.
 | `v3s-onbeforeunmount` | create code `onBeforeUnmount(() => {});`                  |
 | `v3s-nextTick`        | create code `nextTick(() => {});`                         |
 | `v3s-defineExpose`    | create code `defineExpose({});`                           |
+| `v3s-anfn`            | create arrow function                                     |
+| `v3s-backfillFormByPropsData` | backfill form by props data                       |
 
-### scss
+### SCSS / CSS
 
-| Snippet | Purpose    |
-| ------- | ---------- |
-| `:dp`   | :deep() {} |
+| Snippet        | Purpose                             |
+| -------------- | ----------------------------------- |
+| `deep` / `dp`  | `:deep() {}` 样式穿透               |
+| `fc`           | flex center 居中布局                |
+| `fb`           | flex space-between 两端对齐         |
+| `ell`          | 单行文本省略                        |
+| `ellm`         | 多行文本省略                        |
+| `abc`         | 绝对定位居中                        |
+| `abf`         | 绝对定位铺满                        |
+| `bef`          | ::before 伪元素                     |
+| `aft`          | ::after 伪元素                      |
 
 ## Release Notes
 
-See [Change Log](https://github.com/wangyupo/V3S-Snippets/blob/main/CHANGELOG.md).
+See [CHANGELOG](https://github.com/wangyupo/V3S-Snippets/blob/main/CHANGELOG.md).
 
 ---
 
 ## License
 
-[MIT © Richard McRichface.](https://github.com/wangyupo/V3S-Snippets/blob/main/LICENSE)
+[MIT © youper](https://github.com/wangyupo/V3S-Snippets/blob/main/LICENSE)
