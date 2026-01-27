@@ -2,6 +2,30 @@
 
 All notable changes to the "V3S Snippets" extension will be documented in this file.
 
+### 0.0.79
+
+_2026-01-27_
+
+#### Features
+
+- Snippets `v3s-dialog-form`: Create dialog template with form, auto reset fields on close (support v-if/v-show).
+- Snippets `v3s-el-select`: Create Element-plus el-select template.
+- Snippets `v3s-el-radio`, `v3s-el-checkbox`: Add comment with variable type for easy copy to script.
+- SCSS Snippets: Add multiple useful snippets including:
+  - `fc`, `fb`, `fcol`: Flex layouts (center, between, column).
+  - `ell`, `ellm`: Text ellipsis (single/multi line).
+  - `scroll`, `scrollhide`: Custom scrollbar styles.
+  - `absc`, `absf`: Absolute positioning helpers.
+  - `mq`: Media query.
+  - `hover`: Hover with transition.
+  - `bef`, `aft`: Pseudo elements.
+  - `wh`, `full`: Size helpers.
+
+#### Update
+
+- Snippets `:deep`: Add `deep`, `dp` prefix without colon for better trigger.
+- Snippets `v3s-searchBar`: Add `daterange` type search item config.
+
 ### 0.0.24
 
 _2023-10-18_
