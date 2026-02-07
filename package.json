@@ -4,7 +4,7 @@
   "displayName": "V3S Snippets",
   "description": "Vue 3 + Element Plus + Pinia 代码片段，快速生成常用代码模板",
   "author": "youper",
-  "version": "0.0.80",
+  "version": "0.0.81",
   "publisher": "youper",
   "repository": {
     "type": "git",
