@@ -125,6 +125,26 @@
     ],
     "description": "create api call with function wrapper"
   },
+  "api with function async": {
+    "prefix": [
+      "v3s-fetchapi-async"
+    ],
+    "body": [
+      "// ${1:接口请求}",
+      "const fetch${2/(.*)/${1:/capitalize}/} = async () => {",
+      "  const params = {};",
+      "  await ${2:api}(params)",
+      "    .then(res => {",
+      "      if (res.code == 200) {",
+      "        $3",
+      "      }",
+      "    })",
+      "    .catch(() => {})",
+      "    .finally(() => {});",
+      "};"
+    ],
+    "description": "create api call with function wrapper async"
+  },
   "api curd": {
     "prefix": [
       "v3s-api-curd"
@@ -323,11 +343,23 @@
       "const props = defineProps({",
       "  ${1:prop}: {",
       "    type: ${2|String,Number,[Number\\, String],Object,Array,Function,Boolean|},",
-      "    default: ${3|\"\",'',0,false,null,() => ({}),() => []|}",
+      "    default: ${3|\"\",'',0,null,() => ({}),() => [],() => {},false|}",
       "  },",
       "});"
     ],
     "description": "create defineProps code"
+  },
+  "append prop": {
+    "prefix": [
+      "v3s-prop"
+    ],
+    "body": [
+      "${1:prop}: {",
+      "  type: ${2|String,Number,[Number\\, String],Object,Array,Function,Boolean|},",
+      "  default: ${3|\"\",'',0,null,() => ({}),() => [],() => {},false|}",
+      "},"
+    ],
+    "description": "append a prop to existing defineProps"
   },
   "create emit": {
     "prefix": [
