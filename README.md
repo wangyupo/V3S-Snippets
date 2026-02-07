@@ -39,6 +39,7 @@ Vue 3 + Element Plus + Pinia 代码片段，快速生成常用代码模板。
 | `v3s-table-selection`             | Single file component base with v3s table with selection         |
 | `v3s-dialog`                      | Single file component base with v3s dialog                       |
 | `v3s-dialog-form`                 | Single file component base with v3s dialog with form (auto reset)|
+| `v3s-dialog-operate`              | Single file component base with v3s dialog for add/edit operations|
 | `v3s-echart-line`                 | Single file component base with v3s echarts line                 |
 | `v3s-echart-bar`                  | Single file component base with v3s echarts bar                  |
 | `v3s-echart-bar-horizontal`       | Single file component base with v3s echarts bar horizontal       |
@@ -88,11 +89,14 @@ Vue 3 + Element Plus + Pinia 代码片段，快速生成常用代码模板。
 | `v3s-cfn-debounce`    | create a debounced arrow function                         |
 | `v3s-scr`             | create code `scope.row`                                   |
 | `v3s-defineProps`     | create defineProps code                                   |
+| `v3s-prop`            | append a prop to existing defineProps                     |
 | `v3s-defineEmits`     | create defineEmits code                                   |
 | `v3s-useEmits`        | create emits() call code                                  |
 | `v3s-router`          | import useRouter and create router logic code             |
 | `v3s-route`           | import useRoute and create route code                     |
 | `v3s-api`             | create api logic code                                     |
+| `v3s-fetchapi`        | create api call with function wrapper                     |
+| `v3s-fetchapi-async`  | create api call with async function wrapper               |
 | `v3s-api-curd`        | create api curd code                                      |
 | `v3s-params`          | create code `const params = {}`                           |
 | `v3s-code200`         | create code `if (res.code == 200) {}`                     |
