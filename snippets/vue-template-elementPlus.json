@@ -24,7 +24,7 @@
     "prefix": "v3s-el-select",
     "body": [
       "<el-select v-model=\"value\" placeholder=\"请选择\">",
-      "  <el-option v-for=\"item in options\" :key=\"item.value\" :label=\"item.label\" :value=\"item.value\" />",
+      "  <el-option v-for=\"item in []\" :key=\"item.value\" :label=\"item.label\" :value=\"item.value\" />",
       "</el-select>"
     ],
     "description": "Element-plus el-select"

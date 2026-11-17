@@ -24,7 +24,7 @@
   "use v3s el-form": {
     "prefix": "v3s-useelform",
     "body": [
-      "// <el-form ref=\"ruleFormRef\" :model=\"ruleForm\" :rules=\"rules\" label-width=\"auto\" status-icon>",
+      "// <el-form ref=\"ruleFormRef\" :model=\"ruleForm\" :rules=\"rules\" label-width=\"auto\" label-position=\"top\" status-icon>",
       "//   <el-form-item label=\"名称\" prop=\"name\">",
       "//     <el-input v-model=\"ruleForm.name\" placeholder=\"请输入\" />",
       "//   </el-form-item>",
@@ -92,54 +92,64 @@
       "v3s-api"
     ],
     "body": [
-      "const params = {}",
-      "${1:api}(params)",
-      "  .then(res => {",
-      "    if (res.code == 200) {",
-      "      $2",
-      "    }",
-      "  })",
-      "  .catch(() => {})",
-      "  .finally(() => {});"
+      "// ${1:接口请求}",
+      "const ${3:${2:api}}Res = await ${2:api}(params);",
+      "if (${3:api}Res.status == 1) {",
+      "}"
     ],
-    "description": "create api call with promise"
+    "description": "create api call with function wrapper async"
   },
-  "api with function": {
+  "api-async": {
     "prefix": [
-      "v3s-fetchapi"
+      "v3s-api-async"
     ],
     "body": [
       "// ${1:接口请求}",
-      "const fetch${2/(.*)/${1:/capitalize}/} = () => {",
-      "  const params = {};",
-      "  ${2:api}(params)",
-      "    .then(res => {",
-      "      if (res.code == 200) {",
-      "        $3",
-      "      }",
-      "    })",
-      "    .catch(() => {})",
-      "    .finally(() => {});",
+      "const fn_${2} = async () => {",
+      "\ttry {",
+      "\t\tconst params = {};",
+      "\t\tconst res = await ${2:api}(params);",
+      "\t\tif (res.status == 1) {",
+      "\t\t}",
+      "\t} catch (error) {",
+      "\t\tconsole.error(error);",
+      "\t} finally {",
+      "\t}",
       "};"
     ],
-    "description": "create api call with function wrapper"
+    "description": "create api call with function wrapper async"
   },
-  "api with function async": {
+  "api all": {
     "prefix": [
-      "v3s-fetchapi-async"
+      "v3s-api-all"
     ],
     "body": [
       "// ${1:接口请求}",
-      "const fetch${2/(.*)/${1:/capitalize}/} = async () => {",
-      "  const params = {};",
-      "  await ${2:api}(params)",
-      "    .then(res => {",
-      "      if (res.code == 200) {",
-      "        $3",
-      "      }",
-      "    })",
-      "    .catch(() => {})",
-      "    .finally(() => {});",
+      "const [${4:${2:api}}Res, ${5:${3:api}}Res] = await Promise.all([${2:api1}({}), ${3:api2}({})]);",
+      "if (${4:${2:api}}Res.status == 1) {",
+      "}",
+      "if (${5:${3:api}}Res.status == 1) {",
+      "}"
+    ],
+    "description": "create api call with function wrapper async"
+  },
+  "api all async": {
+    "prefix": [
+      "v3s-api-all-async"
+    ],
+    "body": [
+      "// ${1:接口请求}",
+      "const fn_${2:init} = async () => {",
+      "\ttry {",
+      "\t\tconst [${3:api1}Res, ${4:api2}Res] = await Promise.all([${3:api1}({}), ${4:api2}({})]);",
+      "\t\tif (${3:api1}Res.status == 1) {",
+      "\t\t}",
+      "\t\tif (${4:api2}Res.status == 1) {",
+      "\t\t}",
+      "\t} catch (error) {",
+      "\t\tconsole.error(error);",
+      "\t} finally {",
+      "\t}",
       "};"
     ],
     "description": "create api call with function wrapper async"
@@ -185,6 +195,38 @@
       ""
     ],
     "description": "create CRUD api functions"
+  },
+  "api get": {
+    "prefix": [
+      "v3s-api-get"
+    ],
+    "body": [
+      "// ${3:接口请求}",
+      "export const ${2:api} = params => {",
+      "\treturn request({",
+      "\t\turl: `\\${baseURl}/${1:api}`,",
+      "\t\tmethod: \"get\",",
+      "\t\tparams,",
+      "\t});",
+      "};"
+    ],
+    "description": "create api get"
+  },
+  "api post": {
+    "prefix": [
+      "v3s-api-post"
+    ],
+    "body": [
+      "// ${3:接口请求}",
+      "export const ${2:api} = data => {",
+      "\treturn request({",
+      "\t\turl: `\\${baseURl}/${1:api}`,",
+      "\t\tmethod: \"post\",",
+      "\t\tdata,",
+      "\t});",
+      "};"
+    ],
+    "description": "create api post"
   },
   "use pinia in vue3": {
     "prefix": [
@@ -348,17 +390,47 @@
     ],
     "description": "create defineProps code"
   },
-  "append prop": {
-    "prefix": [
-      "v3s-prop"
-    ],
+  "append prop string": {
+    "prefix": "v3s-prop-string",
     "body": [
-      "${1:prop}: {",
-      "  type: ${2|String,Number,[Number\\, String],Object,Array,Function,Boolean|},",
-      "  default: ${3|\"\",'',0,null,() => ({}),() => [],() => {},false|}",
-      "},"
+      "${1:prop}: { type: String, default: \"${2}\" },"
     ],
-    "description": "append a prop to existing defineProps"
+    "description": "append a String prop"
+  },
+  "append prop number": {
+    "prefix": "v3s-prop-number",
+    "body": [
+      "${1:prop}: { type: Number, default: ${2:0} },"
+    ],
+    "description": "append a Number prop"
+  },
+  "append prop boolean": {
+    "prefix": "v3s-prop-boolean",
+    "body": [
+      "${1:prop}: { type: Boolean, default: ${2:false} },"
+    ],
+    "description": "append a Boolean prop"
+  },
+  "append prop object": {
+    "prefix": "v3s-prop-object",
+    "body": [
+      "${1:prop}: { type: Object, default: () => ({}) },"
+    ],
+    "description": "append an Object prop"
+  },
+  "append prop array": {
+    "prefix": "v3s-prop-array",
+    "body": [
+      "${1:prop}: { type: Array, default: () => [] },"
+    ],
+    "description": "append an Array prop"
+  },
+  "append prop function": {
+    "prefix": "v3s-prop-function",
+    "body": [
+      "${1:prop}: { type: Function, default: () => {} },"
+    ],
+    "description": "append a Function prop"
   },
   "create emit": {
     "prefix": [
