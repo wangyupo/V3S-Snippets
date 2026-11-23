@@ -24,7 +24,7 @@
       "<template>",
       "  <!-- ${1:业务说明} -->",
       "  <RhSearch :search-info=\"searchInfo\" @search=\"handleSearch\" />",
-      "  <RhTable border stripe :loading=\"loading\" :table-data=\"tableData\" @page-change=\"getList\" @page-size-change=\"pageSizeChange\">",
+      "  <RhTable stripe :loading=\"loading\" :table-data=\"tableData\" @page-change=\"getList\" @page-size-change=\"pageSizeChange\">",
       "    <template #operate=\"{ scope }\">",
       "      <el-button type=\"primary\" link>操作</el-button>",
       "    </template>",
